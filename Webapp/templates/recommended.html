@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.store.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+  
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 50%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   border-style: ridge;
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.product-name{
+  color:black;
+  text-decoration: none;
+  font-size: 0.8rem !important;
+}
+
+.product-price{
+  color:black;
+  text-decoration: none;
+  position:relative;
+  font-size: 0.8rem !important;
+  text-align: justify;
+  clear: both;
+    display: inline-block;
+    
+    white-space: nowrap;
+}
+.product-name:hover
+{
+  color:blue;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Relevant Products as per your search!!!!!</h3>
+</div>
+<script>
+  function test() {
+    console.log(this.link1);
+    // color_available.forEach((item) => {
+    //   console.log(item);
+    // });
+  } test();
+  </script>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src1}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link1}}" class="product-name">{{name1}}</a></center>
+          <p class="product-price"> {{price1}}</p>
+        </div>
+      </div>
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src2}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link2}}" class="product-name">{{name2}}</a></center>
+          <p class="product-price"> {{price2}}</p>
+        </div>
+      </div>
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src3}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link3}}" class="product-name">{{name3}}</a></center>
+          <p class="product-price"> {{price3}}</p>
+        </div>
+      </div>
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src4}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link4}}" class="product-name">{{name4}}</a></center>
+          <p class="product-price"> {{price4}}</p>
+        </div>
+      </div>
+
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src5}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link5}}" class="product-name">{{name5}}</a></center>
+          <p class="product-price"> {{price5}}</p>
+        </div>
+      </div>
+
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src6}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link6}}" class="product-name">{{name6}}</a></center>
+          <p class="product-price"> {{price6}}</p>
+        </div>
+      </div>
+
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src7}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link7}}" class="product-name">{{name7}}</a></center>
+          <p class="product-price"> {{price7}}</p>
+        </div>
+      </div>
+
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src8}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link8}}" class="product-name">{{name8}}</a></center>
+          <p class="product-price"> {{price8}}</p>
+        </div>
+      </div>
+
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src9}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link9}}" class="product-name">{{name9}}</a></center>
+          <p class="product-price"> {{price9}}</p>
+        </div>
+      </div>
+
+      <div class="col-4" style="padding-left: 2%; padding-right: 2%;">
+        <div class="card">
+          <div class="fakeimg">
+            <center><img src="static/{{img_src10}}" style="width:170px; height:150px;">
+          </div>
+          <center><a href="{{link10}}" class="product-name">{{name10}}</a></center>
+          <p class="product-price"> {{price10}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="fakeimg" ><center><img src="static/{{img_src1}}" style="width:170px; height:150px;"></div>
+      <center><a href="{{link1}}" class="product-name">{{name1}}</a></center>
+      
+      <p class="product-price"> {{price1}}</p>
+      </div>
+	<div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src2}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link2}}</a></center>
+      <p class="product-price">&dollar; {{price2}}</p>
+      </div>
+    <div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src3}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link3}}</a></center>
+      <p class="product-price">&dollar; {{price3}}</p>
+      </div>	  
+    <div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src4}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link4}}</a></center>
+      <p class="product-price">&dollar; {{price4}}</p>
+</div>
+<div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src5}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link5}}</a></center>
+      <p class="product-price">&dollar; {{price5}}</p>
+</div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src6}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link6}}</a></center>
+      <p class="product-price">&dollar; {{price6}}</p>
+    </div>
+	<div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src7}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link7}}</a></center>
+      <p class="product-price">&dollar; {{price7}}</p>
+      </div>
+	<div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src8}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link8}}</a></center>
+      <p class="product-price">&dollar; {{price8}}</p>
+      </div>
+    <div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src9}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link9}}</a></center>
+      <p class="product-price">&dollar; {{price9}}</p>
+    </div>
+<div class="card">
+      <div class="fakeimg" style="height:150px;"><center><img src="static/{{img_src10}}" style="width:170px"></div>
+      <center><a href="{{link}}">{{link10}}</a></center>
+      <p class="product-price">&dollar; {{price10}}</p>
+    </div>
+  </div>
+</div> -->
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.idea/
+.vscode
+# Large Sized file
+image_array.csv
+
+# Trained models
+*.h5
